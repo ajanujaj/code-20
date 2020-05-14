@@ -1,0 +1,16 @@
+s='nextgencoder'
+s1='odernextgenc'
+
+i=1
+while i>0:
+    p1=(s[len(s)-i:]+s[0:len(s)-i])
+    p2=(s[i:]+s[0:i])
+    if p1==s1:
+        print('string is moved right shift by {0}'.format(i))
+        break
+    if(p2==s1):
+        print('string is moved left shift by {0}'.format(i))
+        break
+    i+=1
+    
+print(i)
